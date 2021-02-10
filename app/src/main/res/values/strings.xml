@@ -17,6 +17,13 @@
         <item>CM</item>
         <item>Pulgadas</item>
         <item>Pies</item>
+        <item>yardas</item>
+        <item>millas</item>
+        <item>millas nauticas</item>
+        <item>milimetros</item>
+        <item>micrones</item>
+        <item>nanometro</item>
+        <item>vara</item>
     </string-array>
 </resources>
 

@@ -71,8 +71,7 @@ public class MainActivity extends AppCompatActivity {
                     tempVal = findViewById(R.id.lblRespuesta);
                     tempVal.setText("Por favor ingrese los valores correspondiente");
                     Toast.makeText(getApplicationContext(), "Por ingrese los valores correspondiente "+ e.getMessage(),Toast.LENGTH_SHORT).show();
-                    /*Snackbar snackbar = Snackbar.make(contenidoView, "Por favor ingrese los valores correspondiente", Snackbar.LENGTH_LONG);
-                    snackbar.show();*/
+
                 }
             }
         });
@@ -102,8 +101,8 @@ public class MainActivity extends AppCompatActivity {
 
 class conversores{
     double[][] conversor = {
-            {1.0,8.75,7.77, 24.03,34.8,611.10},/*Monedas*/
-            {1.0, 100.0,39.37,3.28},/*Longitud*/
+            {1.0,8.75,7.77, 24.03,34.8,611.10,0.82,105,3545.93,20.05},/*Monedas*/
+            {1.0, 100.0,39.37,3.28,1.09,0.000621,0.00054,1000,1000000,1000000000,1.19},/*Longitud*/
             {1.0}/*Masa*/
     };
     public double convertir(int opcion, int de, int a, double cantidad){

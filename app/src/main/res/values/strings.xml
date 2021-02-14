@@ -42,6 +42,30 @@
         <item>Fahrenheit</item>
         <item>Kelvin</item>
     </string-array>
+    <string-array name="conversorTiempo">
+        <item>Dias</item>
+        <item>Milisegundos</item>
+        <item>Segundos</item>
+        <item>Minutos</item>
+        <item>Horas</item>
+        <item>Semanas</item>
+        <item>Mes</item>
+        <item>Año</item>
+        <item>Decada</item>
+        <item>Siglo</item>
+    </string-array>
+    <string-array name="conversorVolumen">
+        <item>Litros</item>
+        <item>Mililitros</item>
+        <item>Centimetro cubico</item>
+        <item>Metro cubico</item>
+        <item>Cucharaditas</item>
+        <item>Cucharadas</item>
+        <item>Tazas</item>
+        <item>Cuartos de galon</item>
+        <item>Galon</item>
+        <item>Pulgadas cubicas</item>
+    </string-array>
 </resources>
 
 

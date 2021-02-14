@@ -97,15 +97,52 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-}
+
+
+            public void onClick(View v) {
+                try {
+                    tempVal = findViewById(R.id.txtcantidadB);
+                    double cantidad = Double.parseDouble(tempVal.getText().toString());
+
+                    spnOpcionDe = findViewById(R.id.cboDeB);
+                    spnOpcionA = findViewById(R.id.cboB);
+                    tempVal = findViewById(R.id.lblrRespuestaB);
+
+                    tempVal.setText("Respuesta:"+ miConversor.convertir(1, spnOpcionDe.getSelectedItemPosition(), spnOpcionA.getSelectedItemPosition(),cantidad));
+                }catch (Exception e){
+                    tempVal = findViewById(R.id.lblrRespuestaB);
+                    tempVal.setText("Por favor ingrese los valores correspondientes");
+                    Toast.makeText(getApplicationContext(),"Por favor ingrese los valores correspondientes"+ e.getMessage(),Toast.LENGTH_SHORT).show();
+                }
+
+            }
+
+            public void onClick(View v) {
+                try {
+                    tempVal = findViewById(R.id.txtcantidadB);
+                    double cantidad = Double.parseDouble(tempVal.getText().toString());
+
+                    spnOpcionDe = findViewById(R.id.cboDeB);
+                    spnOpcionA = findViewById(R.id.cboB);
+                    tempVal = findViewById(R.id.lblrRespuestaB);
+
+                    tempVal.setText("Respuesta:"+ miConversor.convertir(1, spnOpcionDe.getSelectedItemPosition(), spnOpcionA.getSelectedItemPosition(),cantidad));
+                }catch (Exception e){
+                    tempVal = findViewById(R.id.lblrRespuestaB);
+                    tempVal.setText("Por favor ingrese los valores correspondientes");
+                    Toast.makeText(getApplicationContext(),"Por favor ingrese los valores correspondientes"+ e.getMessage(),Toast.LENGTH_SHORT).show();
+                }
+            }
 
 class conversores{
     double[][] conversor = {
             {1.0,8.75,7.77, 24.03,34.8,611.10,0.82,105,3545.93,20.05},/*Monedas*/
             {1.0, 100.0,39.37,3.28,1.09,0.000621,0.00054,1000,1000000,1000000000,1.19},/*Longitud*/
-            {1.0}/*Masa*/
+            {1.0,16,453.5,453.5,0.0005,4.53,0.45,4.53,45.3,45.3},/*Masa*/
+            {1.0,8.75,7.77, 24.03,34.8,611.10}/*grados*/
     };
     public double convertir(int opcion, int de, int a, double cantidad){
         return conversor[opcion][a] / conversor[opcion][de] * cantidad;
     }
+}
 }

@@ -57,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
         tbhConversores.addTab(tbhConversores.newTabSpec("Grados").setContent(R.id.tabGrados));
         tbhConversores.addTab(tbhConversores.newTabSpec("Tiempo").setContent(R.id.tabTiempo));
         tbhConversores.addTab(tbhConversores.newTabSpec("Volumen").setContent(R.id.tabVolumen));
+        tbhConversores.addTab(tbhConversores.newTabSpec("Almacenamiento").setContent(R.id.tabAlmacenamiento));
+        tbhConversores.addTab(tbhConversores.newTabSpec("Area").setContent(R.id.tabArea));
         btnConvertir = findViewById(R.id.btnCalcular);
         btnConvertir.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -110,6 +112,8 @@ class conversores{
             {1.0,8.75,7.77, 24.03,34.8,611.10},/*Grados*/
             {1.00,8.64e+7,86400.00,1440.00,24.00,0.142857,0.0328767,0.00273973,0.000273973,2.7397e-5},/*Tiempo*/
             {1.00,1000.00,1000.00,0.001,202.88,67.628,4.22,1.056,0.26,61.023},/*Volumen*/
+            {125,1000000,125,1000000000,125,1000000000,1e+15,1e+15,125,1018},/*Almacenamiento*/
+            {10000,0,698896,628.86,0,698896,1,1000000,0.00064516,0.092903,0.836127,4046.86},/*Area*/
     };
     public double convertir(int opcion, int de, int a, double cantidad){
         return conversor[opcion][a] / conversor[opcion][de] * cantidad;

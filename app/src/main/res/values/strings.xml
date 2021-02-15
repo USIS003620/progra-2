@@ -66,6 +66,30 @@
         <item>Galon</item>
         <item>Pulgadas cubicas</item>
     </string-array>
+    <string-array name="conversorAlmacenamiento">
+        <item>Megabits</item>
+        <item>Megabyte</item>
+        <item>Gigabits</item>
+        <item>Gigabyte</item>
+        <item>Terabits</item>
+        <item>Terabyte</item>
+        <item>Petabits</item>
+        <item>Petabyte</item>
+        <item>Exabits</item>
+        <item>Exabyte</item>
+    </string-array>
+    <string-array name="conversorArea">
+        <item>Hectarea</item>
+        <item>Manzana(Costa Rica)</item>
+        <item>Tarea</item>
+        <item>Varas (Cuadrada)</item>
+        <item>Metros cuadrados</item>
+        <item>Kilómetros cuadrados</item>
+        <item>Pulgadas cuadradas</item>
+        <item>Pies cuadrados</item>
+        <item>Yarda cuadrada</item>
+        <item>Acres</item>
+    </string-array>
 </resources>
 
 

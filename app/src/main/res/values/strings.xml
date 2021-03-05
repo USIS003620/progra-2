@@ -1,95 +1,16 @@
 <resources>
     <string name="app_name">Conversor de Unidades</string>
-    <string-array name="conversorMonedas">
-        <item>Dolar</item>
-        <item>Colon SV</item>
-        <item>Quetzal</item>
-        <item>Lempira</item>
-        <item>Cordoba</item>
-        <item>Colon (Costa Rica)</item>
-        <item>euro</item>
-        <item>yen</item>
-        <item>peso (colombiano)</item>
-        <item>peso (mexicano)</item>
+    <string-array name="conversorSuperficie">
+        <item>PieCuadrado</item>
+        <item>VaraCuadrada</item>
+        <item>YardaCuadrada</item>
+        <item>MetroCuadrado</item>
+        <item>Tareas</item>
+        <item>Manzanas</item>
+        <item>Hectareas</item>
+
     </string-array>
-    <string-array name="conversorLongitud">
-        <item>Metro</item>
-        <item>CM</item>
-        <item>Pulgadas</item>
-        <item>Pies</item>
-        <item>yardas</item>
-        <item>millas</item>
-        <item>millas nauticas</item>
-        <item>milimetros</item>
-        <item>micrones</item>
-        <item>nanometro</item>
-        <item>vara</item>
-    </string-array>
-    <string-array name="conversorMasa">
-        <item>Libras</item>
-        <item>Onzas</item>
-        <item>Gramos</item>
-        <item>Miligramos</item>
-        <item>Toneladas</item>
-        <item>Decigramos</item>
-        <item>Kilogramos</item>
-        <item>Hectogramos</item>
-        <item>Decagramos</item>
-        <item>Centigramos</item>
-    </string-array>
-    <string-array name="conversorGrados">
-        <item>Celcius</item>
-        <item>Fahrenheit</item>
-        <item>Kelvin</item>
-    </string-array>
-    <string-array name="conversorTiempo">
-        <item>Dias</item>
-        <item>Milisegundos</item>
-        <item>Segundos</item>
-        <item>Minutos</item>
-        <item>Horas</item>
-        <item>Semanas</item>
-        <item>Mes</item>
-        <item>Año</item>
-        <item>Decada</item>
-        <item>Siglo</item>
-    </string-array>
-    <string-array name="conversorVolumen">
-        <item>Litros</item>
-        <item>Mililitros</item>
-        <item>Centimetro cubico</item>
-        <item>Metro cubico</item>
-        <item>Cucharaditas</item>
-        <item>Cucharadas</item>
-        <item>Tazas</item>
-        <item>Cuartos de galon</item>
-        <item>Galon</item>
-        <item>Pulgadas cubicas</item>
-    </string-array>
-    <string-array name="conversorAlmacenamiento">
-        <item>Megabits</item>
-        <item>Megabyte</item>
-        <item>Gigabits</item>
-        <item>Gigabyte</item>
-        <item>Terabits</item>
-        <item>Terabyte</item>
-        <item>Petabits</item>
-        <item>Petabyte</item>
-        <item>Exabits</item>
-        <item>Exabyte</item>
-    </string-array>
-    <string-array name="conversorArea">
-        <item>Hectarea</item>
-        <item>Manzana(Costa Rica)</item>
-        <item>Tarea</item>
-        <item>Varas (Cuadrada)</item>
-        <item>Metros cuadrados</item>
-        <item>Kilómetros cuadrados</item>
-        <item>Pulgadas cuadradas</item>
-        <item>Pies cuadrados</item>
-        <item>Yarda cuadrada</item>
-        <item>Acres</item>
-    </string-array>
+
 </resources>
 
 

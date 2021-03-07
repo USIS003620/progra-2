@@ -5,65 +5,67 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <RelativeLayout
-        android:id="@+id/tabSuperficie"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="10dp"
-        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/lblVO"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="DE: " />
 
-        <Spinner
-            android:id="@+id/cboVL"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:entries="@array/conversorSuperficie"/>
+<RelativeLayout
+android:id="@+id/tabSuperficie"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_margin="10dp"
+android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/lblV"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/cboVL"
-            android:layout_marginTop="20dp"
-            android:text="A: " />
+<TextView
+    android:id="@+id/lblDe"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="DE: " />
 
-        <Spinner
-            android:id="@+id/cboV"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/cboVL"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="20dp"
-            android:entries="@array/conversorSuperficie"/>
+<Spinner
+    android:id="@+id/cboDe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="40dp"
+    android:entries="@array/conversorSuperficie" />
 
-        <EditText
-            android:id="@+id/txtcantidadV"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/cboV"
-            android:layout_marginTop="20dp"
-            android:hint="Cantidad" />
+<TextView
+    android:id="@+id/lblA"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/cboDe"
+    android:layout_marginTop="20dp"
+    android:text="A: " />
 
-        <TextView
-            android:id="@+id/lblRespuestaV"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/txtcantidadV"
-            android:layout_marginTop="20dp"
-            android:text="Respuesta: ?"/>
+<Spinner
+    android:id="@+id/cboA"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/cboDe"
+    android:layout_marginLeft="40dp"
+    android:layout_marginTop="20dp"
+    android:entries="@array/conversorSuperficie" />
 
-        <Button
-            android:id="@+id/btnCalcularV"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/lblRespuestaV"
-            android:layout_marginTop="20dp"
-            android:text="Calcular"/>
+<EditText
+    android:id="@+id/txtcantidad"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/cboA"
+    android:layout_marginTop="20dp"
+    android:hint="Cantidad" />
+
+<TextView
+    android:id="@+id/lblRespuesta"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/txtcantidad"
+    android:layout_marginTop="20dp"
+    android:text="Respuesta: ?" />
+
+<Button
+    android:id="@+id/btnCalcular"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/lblRespuesta"
+    android:layout_marginTop="20dp"
+    android:text="Calcular" />
     </RelativeLayout>
 </RelativeLayout>

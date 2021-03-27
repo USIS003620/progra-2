@@ -1,71 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ugb.miprimerproyecto">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera2" android:required="true"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MiPrimerProyecto">
+        <activity android:name=".AgregarAmigos"></activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-<RelativeLayout
-android:id="@+id/tabSuperficie"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:layout_margin="10dp"
-android:orientation="vertical">
-
-<TextView
-    android:id="@+id/lblDe"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="DE: " />
-
-<Spinner
-    android:id="@+id/cboDe"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginLeft="40dp"
-    android:entries="@array/conversorSuperficie" />
-
-<TextView
-    android:id="@+id/lblA"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_below="@id/cboDe"
-    android:layout_marginTop="20dp"
-    android:text="A: " />
-
-<Spinner
-    android:id="@+id/cboA"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_below="@id/cboDe"
-    android:layout_marginLeft="40dp"
-    android:layout_marginTop="20dp"
-    android:entries="@array/conversorSuperficie" />
-
-<EditText
-    android:id="@+id/txtcantidad"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_below="@id/cboA"
-    android:layout_marginTop="20dp"
-    android:hint="Cantidad" />
-
-<TextView
-    android:id="@+id/lblRespuesta"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_below="@id/txtcantidad"
-    android:layout_marginTop="20dp"
-    android:text="Respuesta: ?" />
-
-<Button
-    android:id="@+id/btnCalcular"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_below="@id/lblRespuesta"
-    android:layout_marginTop="20dp"
-    android:text="Calcular" />
-    </RelativeLayout>
-</RelativeLayout>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:authorities="com.ugb.miprimerproyecto.fileprovider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+    </application>
+</manifest>

@@ -1,15 +1,5 @@
 <resources>
-    <string name="app_name">Conversor</string>
-    <string-array name="conversorSuperficie">
-        <item>PieCuadrado</item>
-        <item>VaraCuadrada</item>
-        <item>YardaCuadrada</item>
-        <item>MetroCuadrado</item>
-        <item>Tareas</item>
-        <item>Manzanas</item>
-        <item>Hectareas</item>
 
-    </string-array>
 
 </resources>
 

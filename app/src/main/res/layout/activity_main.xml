@@ -1,86 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ugb.miprimerproyecto">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-<TextView
-
-
-android:id="@+id/lbltitulo"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:text="OPERACIONES BASICAS"
-android:layout_marginTop="20dp"
-android:textAlignment="center"
-android:gravity="center_horizontal" />
-
-
-<EditText
-
-
-android:id="@+id/txtnum1"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:layout_below="@+id/lbltitulo"
-android:hint="Escribe un numero"
-android:layout_margin="10dp"/>
-
-<EditText
-
-
-android:id="@+id/txtnum2"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:layout_below="@id/txtnum1"
-android:hint="Escribe un numero"
-android:layout_margin="10dp"/>
-
-
-<Spinner
-
-
-android:id="@+id/cboOperacionesBasicas"
-android:layout_below="@id/txtnum2"
-android:layout_marginTop="20dp"
-android:layout_marginLeft="120dp"
-android:layout_width="wrap_content"
-android:entries="@array/operacionesBasicas"
-android:layout_height="wrap_content"/>
-
-<TextView
-
-android:id="@+id/lblRespuesta"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:layout_below="@id/cboOperacionesBasicas"
-android:layout_marginTop="20dp"
-android:text="Respuesta: ?"
-android:textAlignment="center"
-android:gravity="center_horizontal" />
-
-<Button
-
-
-android:id="@+id/btnCalcular"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:layout_below="@+id/lblRespuesta"
-android:layout_marginTop="20dp"
-android:layout_marginBottom="10dp"
-android:onClick="calcular"
-android:text="Calcular" />
-
-    </RelativeLayout>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera2" android:required="true"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MiPrimerProyecto">
+        <activity android:name=".AgregarAmigos"></activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:authorities="com.ugb.miprimerproyecto.fileprovider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+    </application>
+</manifest>
